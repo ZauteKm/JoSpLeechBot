@@ -1,7 +1,7 @@
 import aiohttp
 from requests.utils import requote_uri
 
-MAX_INLINE_RESULTS = 300
+MAX_INLINE_RESULTS = 100
 
 API_1337x = "https://api.abirhasan.wtf/1337x?query={}&limit={}"
 API_YTS = "https://api.abirhasan.wtf/yts?query={}&limit={}"
