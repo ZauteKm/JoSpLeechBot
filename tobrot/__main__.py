@@ -10,7 +10,7 @@ import traceback
 
 from pyrogram import Client, filters, idle
 from pyrogram.raw import functions, types
-from pyrogram.handlers import CallbackQueryHandler, MessageHandler
+from pyrogram.handlers import CallbackQueryHandler, InlineQueryHandler, MessageHandler
 
 from tobrot import app
 from tobrot import (
@@ -46,6 +46,8 @@ from tobrot import (
 )
 from tobrot.helper_funcs.download import down_load_media_f
 from tobrot.plugins.call_back_button_handler import button
+from tobrot.plugins.torrent_inline import inline_handlers
+
 # the logging things
 from tobrot.plugins.choose_rclone_config import rclone_command_f
 from tobrot.plugins.custom_thumbnail import clear_thumb_nail, save_thumb_nail
@@ -115,6 +117,11 @@ if __name__ == "__main__":
         filters=filters.command([f"{GET_SIZE_G}"]) & filters.chat(chats=AUTH_CHANNEL),
     )
     app.add_handler(incoming_size_checker_handler)
+    ##############################################################################
+    incoming_torrent_inline = InlineQueryHandler(
+        inline_handlers,
+    )
+    app.add_handler(incoming_torrent_inline)
     ##############################################################################
     incoming_g_clear_handler = MessageHandler(
         g_clearme,
