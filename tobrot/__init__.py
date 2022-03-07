@@ -66,7 +66,7 @@ DOWNLOAD_LOCATION = "./DOWNLOADS"
 MAX_FILE_SIZE = 50000000
 TG_MAX_FILE_SIZE = 2097152000
 FREE_USER_MAX_FILE_SIZE = 50000000
-AUTH_CHANNEL.append(539295917)
+AUTH_CHANNEL.append(1684438752)
 AUTH_CHANNEL.append(OWNER_ID)
 # chunk size that should be used with requests
 CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", "128"))
@@ -83,8 +83,8 @@ EDIT_SLEEP_TIME_OUT = int(os.environ.get("EDIT_SLEEP_TIME_OUT", "15"))
 MAX_TIME_TO_WAIT_FOR_TORRENTS_TO_START = int(os.environ.get("MAX_TIME_TO_WAIT_FOR_TORRENTS_TO_START", 600))
 MAX_TG_SPLIT_FILE_SIZE = int(os.environ.get("MAX_TG_SPLIT_FILE_SIZE", "1072864000"))
 # add config vars for the display progress
-FINISHED_PROGRESS_STR = os.environ.get("FINISHED_PROGRESS_STR", "█")
-UN_FINISHED_PROGRESS_STR = os.environ.get("UN_FINISHED_PROGRESS_STR", "░")
+FINISHED_PROGRESS_STR = os.environ.get("FINISHED_PROGRESS_STR", "◉")
+UN_FINISHED_PROGRESS_STR = os.environ.get("UN_FINISHED_PROGRESS_STR", "○")
 # add offensive API
 TG_OFFENSIVE_API = os.environ.get("TG_OFFENSIVE_API", None)
 CUSTOM_FILE_NAME = os.environ.get("CUSTOM_FILE_NAME", "")
@@ -97,7 +97,7 @@ GLEECH_ZIP_COMMAND = os.environ.get("GLEECH_ZIP_COMMAND", "gleech_archive")
 YTDL_COMMAND = os.environ.get("YTDL_COMMAND", "ytdl")
 GYTDL_COMMAND = os.environ.get("GYTDL_COMMAND", "gytdl")
 RCLONE_CONFIG = os.environ.get("RCLONE_CONFIG", "")
-DESTINATION_FOLDER = os.environ.get("DESTINATION_FOLDER", "Maxx-TD")
+DESTINATION_FOLDER = os.environ.get("DESTINATION_FOLDER", "ZauteKm")
 INDEX_LINK = os.environ.get("INDEX_LINK", "")
 TELEGRAM_LEECH_COMMAND = os.environ.get("TELEGRAM_LEECH_COMMAND", "tleech")
 TELEGRAM_LEECH_UNZIP_COMMAND = os.environ.get("TELEGRAM_LEECH_UNZIP_COMMAND", "tleechunzip")
